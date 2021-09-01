@@ -52,7 +52,7 @@ size_t StrDupTest() {
     return a;
 }
 
-size_t UnitTest() {
+void UnitTest() {
     size_t success_count = 0;
 
     size_t (*tests[])() = {StrCatTest, StrChrTest, StrLenTest, StrnCpyTest, StrCpyTest,
