@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <malloc.h>
-#include "my_stdlib.h"
+#include "../Onegin/my_stdlib.h"
 
 
 size_t StrLenTest() {

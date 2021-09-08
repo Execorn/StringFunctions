@@ -182,6 +182,7 @@ char* strdup (const char *str) {
  * @param [in] str1 первая строка для сравнения.
  * @param [in] str2 вторая строка для сравнения.
  *
+ *
  * Строки сравниваются лексикографически. Если str1 > str2, функция возвращает 1.
  * В случае эквивалентности строк функция возвращает 0.
  * В случае, если str1 < str2, возвращаемое значение равно -1.
@@ -196,3 +197,38 @@ int strcmp(const char *str1, const char *str2) {
 }
 
 
+
+
+/*
+char getChar(FILE* in, char* cur) {
+    int check = fscanf(in, "%c", cur);
+    if (!check || !checking(cur)) {
+        return -1;
+    }
+    return *cur;
+}
+
+size_t arrLen(char** a) {
+    size_t len = 0;
+    while (a) {
+        len++;
+        a++;
+    }
+    return len;
+}
+
+
+void* myFGets(char* buffer, size_t max, FILE* in) {
+    char cur = -2;
+    size_t curSize = 0;
+    while (curSize < max) {
+        if (cur != getChar(in, &cur)) {
+            continue;
+        }
+        buffer[curSize] = cur;
+        curSize += 1;
+    }
+    buffer[curSize] = '\0';
+    return buffer;
+}
+*/
