@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <malloc.h>
-#include "../Onegin/my_stdlib.h"
+#include "my_stdlib.h"
 
 
 size_t StrLenTest() {
@@ -51,6 +51,15 @@ size_t StrDupTest() {
     free(newstr);
     return a;
 }
+
+/*!
+ * \brief Функция выполнения юнит тестирования.
+ *
+ * Создает переменную подсчета количества верно выполненных тестов и выводит в поток
+ * stdout сообщение об успешном завершении всех тестов. Если какой-либо тест не прошел, функция выведет
+ * сообщение об ошибке.
+ *
+ */
 
 void UnitTest() {
     size_t success_count = 0;
